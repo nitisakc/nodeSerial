@@ -4,7 +4,7 @@ const SerialPort = require('serialport');
 const Readline = require('@serialport/parser-readline');
 const pjson = require('./package.json');
 
-let val = 0;
+let val = -1;
 
 function runSerial() {
 	SerialPort.list(function(err, ports) {
